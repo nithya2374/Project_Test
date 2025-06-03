@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodMart - Grocery Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-6 shadow-sm">
+    <div class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-12 w-12" />
+        <h1 class="text-2xl font-bold"><span class="text-gray-900">FOOD</span><span class="text-yellow-500">MART</span></h1>
+    </div>
+
+    <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+
+         <select class="px-4 py-2 text-gray-700  bg-white-200 outline-none">
+            <option >All Categories</option>
+            <option>Drinks</option>
+            <option>Chocolates</option>
+            <option>Groceries</option>
+         </select>
+
+         <input type="text" placeholder="Search for more than 20,000 products" class="px-4 py-2 w-96 text-gray-700  bg-white-400 outline-none" />
+         <button class="px-4  text-gray-600">
+              <i class="fas fa-search bg-gray-100 "></i>
+         </button>
+    </div>
+
+    <div class="flex items-center space-x-5">
+
+      <div class="text-right">
+        <p class="text-md text-gray-500">For Support?</p>
+        <p class="font-semibold text-gray-800">+980-34984089</p>
+      </div>
+
+      <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+      <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+
+      <div class="relative cursor-pointer">
+        <i id="cart-icon" class="fa-solid fa-cart-shopping text-xl"></i>
+        <span class="absolute -top-2 -right-2 bg-yellow-500 text-white text-xs rounded-full px-1.5"></span>
+        <p class="text-md font-semibold">$1290.00</p>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="flex items-center space-x-6 px-6 py-3 mt-4 border-t border-b text-gray-700 text-md">
+
+    <div class="relative group">
+      <button class="flex items-center space-x-1">Shop by Departments <i class="fas fa-chevron-down text-xs"></i></button>
+      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 p-2  z-10">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shop by Departments</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Groceries</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drinks</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Chocolates</a>
+      </div>
+    </div>
+
+    <a href="#">Women</a>
+    <a href="#">Men</a>
+    <a href="#">Kids</a>
+    <a href="#">Accessories</a>
+
+    <div class="relative group">
+      <button class="flex items-center space-x-1">Pages <i class="fas fa-chevron-down text-xs"></i></button>
+      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2  p-2 z-10">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shop</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Single Product</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cart</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Checkout</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Single Post</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Styles</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Thank You</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">My Account</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">404 Error</a>
+      </div>
+    </div>
+
+    <a href="#">Brand</a>
+    <a href="#">Sale</a>
+    <a href="#">Blog</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl bg-gray-200 rounded-lg mx-auto px-6 py-10 grid md:grid-cols-2 mt-7 items-center gap-8">
+    <!-- Text Content -->
+    <div >
+      <h3 class="text-xl text-yellow-700 font-semibold mb-2">100% Natural</h3>
+      <h1 class="text-4xl font-extrabold mb-4">Fresh Smoothie & Summer Juice</h1>
+      <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+      <a href="#" class="inline-block px-6 py-2 border border-black text-black hover:bg-black hover:text-white transition">SHOP NOW</a>
+    </div>
+
+  </section>
+
+  <!-- Offers Section -->
+  <section class="max-w-6xl mx-auto  px-8 py-12 grid md:grid-cols-2 gap-6">
+
+    <!-- Fruits & Vegetables Offer -->
+    <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-between shadow-sm">
+      <div>
+        <h3 class="text-xl text-gray-800 font-semibold mb-1">20% Off</h3>
+        <p class="text-sm text-gray-500 mb-1">SALE</p>
+        <h2 class="text-lg font-bold text-gray-900 mb-2">Fruits & Vegetables</h2>
+        <a href="#" class="text-sm text-gray-700 font-medium hover:underline">Shop Collection →</a>
+      </div>
+      <img src="images/slide-3.jpg" alt="Fruits & Vegetables" class="w-32 md:w-36 ml-4">
+    </div>
+
+    <!-- Baked Products Offer -->
+    <div class="bg-pink-50 rounded-xl p-8 bg-pink-100 flex items-center justify-between shadow-sm">
+      <div>
+        <h3 class="text-xl text-gray-800 font-semibold mb-1">15% Off</h3>
+        <p class="text-sm text-gray-500 mb-1">SALE</p>
+        <h2 class="text-lg font-bold text-gray-900 mb-2">Baked Products</h2>
+        <a href="#" class="text-sm text-gray-700 font-medium hover:underline">Shop Collection →</a>
+      </div>
+      <img src="images/slide-4.jpg" alt="Baked Products" class="w-32 md:w-36 ml-4">
+    </div>
+
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+    
+    <div class="p-6 flex justify-between items-center border-b">
+      <h2 class="text-xl font-semibold text-yellow-500">Your cart</h2>
+      <button id="close-cart" class="text-gray-500 text-2xl">&times;</button>
+    </div>
+
+    <div class="p-6 space-y-4 overflow-y-auto max-h-[calc(100%-160px)]">
+      <!-- Cart items -->
+      <div class="border-b pb-2">
+        <p class="font-semibold">Growers cider <span class="float-right">$12</span></p>
+        <p class="text-sm text-gray-500">Brief description</p>
+      </div>
+      <div class="border-b pb-2">
+        <p class="font-semibold">Fresh grapes <span class="float-right">$8</span></p>
+        <p class="text-sm text-gray-500">Brief description</p>
+      </div>
+      <div class="border-b pb-2">
+        <p class="font-semibold">Heinz tomato ketchup <span class="float-right">$5</span></p>
+        <p class="text-sm text-gray-500">Brief description</p>
+      </div>
+
+      <!-- Total -->
+      <div class="font-semibold text-lg pt-4 border-t">
+        Total (USD): <span class="float-right text-yellow-600">$25</span>
+      </div>
+
+      <!-- Checkout Button -->
+      <button class="w-full mt-4 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded">Continue to checkout</button>
+    </div>
+  </div>
+
+  <!---category---->
+
+  <section class="text-left text-2xl w-full px-4 py-16 mt-6 bg-white ">
+
+    <div class="container mx-auto flex justify-between  items-center">
+        <h1 class="font-bold text-black ml-7">Category</h1>
+        <h1 class="font-bold text-black mr-16">View all Categories</h1>
+    </div>
+
+    <div class="container mx-auto flex justify-between shadow items-center mt-8">
+        <div class="p-8 bg-white-300 border-white-100  hover:shadow-2xl cursor-pointer">
+            <img src="images/icon-vegetables-broccoli.png" class="mx-auto text-sm">
+            <p class="text-black font-bold">vegetables and fruits</p>
+        </div>
+        <div class="p-8 bg-white-300 border-white-100  hover:shadow-lg cursor-pointer">
+            <img src="images/icon-animal-products-drumsticks.png" class="mx-auto text-sm">
+            <p class="text-black font-bold">Animal Products</p>
+        </div>
+        <div class="p-8 bg-white-300 border-white-100  hover:shadow-lg cursor-pointer">
+            <img src="images/icon-soft-drinks-bottle.png" class="mx-auto text-sm">
+            <p class="text-black font-bold">Soft Drinks</p>
+        </div>
+        <div class="p-8 bg-white-300 border-white-100  hover:shadow-lg cursor-pointer">
+            <img src="images/icon-wine-glass-bottle.png" class="mx-auto text-sm">
+            <p class="text-black font-bold">Wine Glass Bottle</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- JS for Cart Toggle -->
+  <script>
+    const cartIcon = document.getElementById('cart-icon');
+    const cartSidebar = document.getElementById('cart-sidebar');
+    const closeCart = document.getElementById('close-cart');
+
+    cartIcon.addEventListener('click', () => {
+      cartSidebar.classList.remove('translate-x-full');
+    });
+
+    closeCart.addEventListener('click', () => {
+      cartSidebar.classList.add('translate-x-full');
+    });
+  </script>
+  
+</body>
+</html>
